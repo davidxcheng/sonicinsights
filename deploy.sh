@@ -1,1 +1,1 @@
-echo Ta-da!
+echo @NPM_CMD
