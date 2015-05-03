@@ -1,1 +1,1 @@
-echo @NPM_CMD
+echo $NPM_CMD
