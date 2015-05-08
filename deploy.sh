@@ -3,9 +3,7 @@ echo heysan
 node --version
 npm --version
 
-echo $DEPLOYMENT_SOURCE
-echo $NPM_CMD
+if [ -e "$DEPLOYMENT_SOURCE/Gruntfile.js" ]; then
+    echo Has Gruntfile
+fi
 
-selectNodeVersion
-
-echo $NPM_CMD
