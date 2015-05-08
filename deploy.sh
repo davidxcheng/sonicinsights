@@ -1,1 +1,3 @@
-echo $NPM_CMD
+echo heysan
+
+node --version
