@@ -20,6 +20,5 @@ if [ -e "$DEPLOYMENT_SOURCE/Gruntfile.js" ]; then
 
     echo grunt-cli installed
 
-    ./node_modules/grunt-cli/bin/grunt --no-color
+    # ./node_modules/grunt-cli/bin/grunt --no-color
 fi
-
