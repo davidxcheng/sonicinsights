@@ -1,3 +1,6 @@
+node --version
+npm --version
+
 npm config set strict-ssl false
 
 # Enable running this script locally
