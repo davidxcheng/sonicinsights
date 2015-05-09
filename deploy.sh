@@ -10,6 +10,10 @@ fi
 
 echo $DEPLOYMENT_SOURCE
 
+if [ -e "$DEPLOYMENT_SOURCE/package.json" ]; then
+	npm install
+fi
+
 if [ -e "$DEPLOYMENT_SOURCE/Gruntfile.js" ]; then
     echo Has Gruntfile
     eval npm install grunt-cli
