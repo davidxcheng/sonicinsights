@@ -11,10 +11,11 @@ fi
 echo $DEPLOYMENT_SOURCE
 
 if [ -e "$DEPLOYMENT_SOURCE/package.json" ]; then
+	echo Running npm install
 	npm install
 fi
 
 if [ -e "$DEPLOYMENT_SOURCE/Gruntfile.js" ]; then
     echo Has Gruntfile
-    ./node_modules/.bin/grunt --no-color
+    ./node_modules/grunt-cli/bin/grunt --no-color
 fi
