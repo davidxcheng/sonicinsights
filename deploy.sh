@@ -3,10 +3,19 @@ npm --version
 
 npm config set strict-ssl false
 
+# Enable running this script locally
+if [ "$DEPLOYMENT_SOURCE" = "" ]; then
+	DEPLOYMENT_SOURCE="."
+fi
+
+echo $DEPLOYMENT_SOURCE
+
 if [ -e "$DEPLOYMENT_SOURCE/Gruntfile.js" ]; then
     echo Has Gruntfile
-    npm install grunt-cli
+    eval npm install grunt-cli
 
-    ./node_modules/.bin/grunt --no-color
+    echo grunt-cli installed
+
+    ./node_modules/grunt-cli/bin/grunt --no-color
 fi
 
