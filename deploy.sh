@@ -11,8 +11,8 @@ fi
 echo $DEPLOYMENT_SOURCE
 
 if [ -e "$DEPLOYMENT_SOURCE/package.json" ]; then
-	echo Running npm install
-	npm install
+	echo Running 'npm install --dev'
+	npm install --dev
 fi
 
 if [ -e "$DEPLOYMENT_SOURCE/Gruntfile.js" ]; then
